@@ -141,3 +141,121 @@ main {
 #tech-stack h2 {
   grid-column: 1 / -1;
 }
+
+@media (min-width: 768px) {
+  header {
+    padding: 45px 20px 30px;
+  }
+
+  header h1 {
+    font-size: 34px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 9px 14px;
+    font-size: 15px;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .hero {
+    padding: 45px 40px;
+  }
+
+  .hero > h2 {
+    display: none;
+  }
+
+  .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 330px;
+  }
+
+  .hero-text {
+    text-align: left;
+    max-width: 600px;
+  }
+
+  .hero-image {
+    order: 0;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .hero-buttons a {
+    width: auto;
+  }
+
+  #proyek {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  #tech-stack {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 60px 20px 35px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 45px auto;
+  }
+
+  .hero {
+    padding: 55px 60px;
+  }
+
+  .hero-content {
+    min-height: 360px;
+  }
+
+  .hero h3 {
+    font-size: 22px;
+  }
+
+  .hero .profile-photo {
+    width: 210px;
+    height: 210px;
+  }
+
+  section:not(.hero) {
+    padding: 30px;
+  }
+
+  #proyek {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    );
+    gap: 1.5rem;
+  }
+
+  #tech-stack {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    );
+    gap: 1.5rem;
+  }
+}

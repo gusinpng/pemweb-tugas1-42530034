@@ -376,10 +376,6 @@ footer a:hover {
     padding: 45px 40px;
   }
 
-  .hero > h2 {
-    display: none;
-  }
-
   .hero-content {
     flex-direction: row;
     justify-content: space-between;

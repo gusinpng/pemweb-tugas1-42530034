@@ -26,3 +26,118 @@ body {
   color: var(--text);
   line-height: 1.6;
 }
+
+header {
+  background: linear-gradient(
+    135deg,
+    var(--dark),
+    var(--dark-light)
+  );
+  color: white;
+  text-align: center;
+  padding: 35px 15px 25px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+main {
+  width: 92%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--dark),
+    var(--dark-light)
+  );
+  color: white;
+  padding: 35px 25px;
+  margin-bottom: 25px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-image {
+  order: -1;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  width: 180px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* GRID PROYEK */
+
+#proyek {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#proyek h2 {
+  grid-column: 1 / -1;
+}
+
+
+/* GRID TECH STACK */
+
+#tech-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#tech-stack h2 {
+  grid-column: 1 / -1;
+}
